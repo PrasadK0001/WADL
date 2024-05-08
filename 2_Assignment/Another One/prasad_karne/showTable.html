@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title></title>
+        <link href="bootstrap-combined.min.css" rel="stylesheet"
+            id="bootstrap-css">
+    </head>
+    <body>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <table class="table table-bordered">
+                        <tr>
+                            <th>Username</th>
+                            <th>Email</th>
+                            <th>Mobile</th>
+                        </tr>
+                        <tbody id="tbodydata">
+                               <td><span id="uname"></span></td>
+                               <td id="uemail"></td>
+                               <td id="umobile"></td> 
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <script src="jquery-1.11.1.min.js"></script>
+        <script src="bootstrap.min.js"></script>
+        <script type="text/javascript">
+            var html = ""; 
+            document.getElementById("uname").innerHTML= localStorage.getItem('username');
+            document.getElementById("uemail").innerHTML= localStorage.getItem('email');
+            document.getElementById("umobile").innerHTML= localStorage.getItem('mobile');
+                
+           </script>
+    </body>
+</html>
